@@ -3,6 +3,9 @@ const generateToken = require("../utils/generateToken");
 
 // POST /api/auth/register
 const register = async (req, res, next) => {
+  console.log("REGISTER API HIT");
+  console.log(req.body);
+  
   try {
     const { name, email, password, confirmPassword, role } = req.body;
 
